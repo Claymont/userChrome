@@ -1,0 +1,247 @@
+/* --- Context Menu Styling --- */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --contextmenu-background: #ffffff;
+    --contextmenu-color: #000000;
+    --contextmenu-hover: #eeeeee;
+    --contextmenu-disabled: #9e9e9e;
+    --contextmenu-border-separator: #dadada;
+    --contextmenu-icon-primary: rgba(12, 12, 13, 0.8);
+    --contextmenu-icon-secondary: rgba(12, 12, 13, 0.6);
+  }
+  #screenshots_mozilla_org-menuitem-_create-screenshot > .menu-iconic-left > .menu-iconic-icon {
+    opacity: 0.8;
+  }
+  menuitem[type="checkbox"][checked="true"] > .menu-iconic-left {
+    background: url(data:image/svg+xml;base64,PCEtLSBUaGlzIFNvdXJjZSBDb2RlIEZvcm0gaXMgc3ViamVjdCB0byB0aGUgdGVybXMgb2YgdGhlIE1vemlsbGEgUHVibGljCiAgIC0gTGljZW5zZSwgdi4gMi4wLiBJZiBhIGNvcHkgb2YgdGhlIE1QTCB3YXMgbm90IGRpc3RyaWJ1dGVkIHdpdGggdGhpcwogICAtIGZpbGUsIFlvdSBjYW4gb2J0YWluIG9uZSBhdCBodHRwOi8vbW96aWxsYS5vcmcvTVBMLzIuMC8uIC0tPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIwIDAgMTYgMTYiPjxwYXRoIGZpbGw9InJnYmEoMTIsIDEyLCAxMywgMC42KSIgZD0iTTYgMTRhMSAxIDAgMCAxLS43MDctLjI5M2wtMy0zYTEgMSAwIDAgMSAxLjQxNC0xLjQxNGwyLjE1NyAyLjE1NyA2LjMxNi05LjAyM2ExIDEgMCAwIDEgMS42MzkgMS4xNDZsLTcgMTBhMSAxIDAgMCAxLS43MzIuNDI3QS44NjMuODYzIDAgMCAxIDYgMTR6Ij48L3BhdGg+PC9zdmc+) no-repeat left center;
+  }
+  menupopup > menuitem[type="radio"][checked="true"] > .menu-iconic-left {
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTUiIHdpZHRoPSIxNSIgdmlld0JveD0iMCAwIDE1IDE1Ij48Y2lyY2xlIGN4PSI3LjUiIGN5PSI3LjUiIHI9IjcuNSIgZmlsbD0icmdiYSgxMiwgMTIsIDEzLCAwLjYpIiAvPjwvc3ZnPg==) no-repeat left center;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --contextmenu-background: #3f3f3f;
+    --contextmenu-color: #ffffff;
+    --contextmenu-hover: #575757;
+    --contextmenu-disabled: #ababab;
+    --contextmenu-border-separator: #636363;
+    --contextmenu-icon-primary: rgba(249, 249, 250, 0.8);
+    --contextmenu-icon-secondary: rgba(249, 249, 250, 0.6);
+  }
+  menu > .menu-right {
+    filter: invert(1);
+  }
+  #screenshots_mozilla_org-menuitem-_create-screenshot > .menu-iconic-left > .menu-iconic-icon {
+    filter: invert(1);
+    opacity: 0.8;
+  }
+  menuitem[type="checkbox"][checked="true"] > .menu-iconic-left {
+    background: url(data:image/svg+xml;base64,PCEtLSBUaGlzIFNvdXJjZSBDb2RlIEZvcm0gaXMgc3ViamVjdCB0byB0aGUgdGVybXMgb2YgdGhlIE1vemlsbGEgUHVibGljCiAgIC0gTGljZW5zZSwgdi4gMi4wLiBJZiBhIGNvcHkgb2YgdGhlIE1QTCB3YXMgbm90IGRpc3RyaWJ1dGVkIHdpdGggdGhpcwogICAtIGZpbGUsIFlvdSBjYW4gb2J0YWluIG9uZSBhdCBodHRwOi8vbW96aWxsYS5vcmcvTVBMLzIuMC8uIC0tPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIwIDAgMTYgMTYiPjxwYXRoIGZpbGw9InJnYmEoMjQ5LCAyNDksIDI1MCwgMC42KSIgZD0iTTYgMTRhMSAxIDAgMCAxLS43MDctLjI5M2wtMy0zYTEgMSAwIDAgMSAxLjQxNC0xLjQxNGwyLjE1NyAyLjE1NyA2LjMxNi05LjAyM2ExIDEgMCAwIDEgMS42MzkgMS4xNDZsLTcgMTBhMSAxIDAgMCAxLS43MzIuNDI3QS44NjMuODYzIDAgMCAxIDYgMTR6Ij48L3BhdGg+PC9zdmc+) no-repeat left center;
+  }
+  menupopup > menuitem[type="radio"][checked="true"] > .menu-iconic-left {
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTUiIHdpZHRoPSIxNSIgdmlld0JveD0iMCAwIDE1IDE1Ij48Y2lyY2xlIGN4PSI3LjUiIGN5PSI3LjUiIHI9IjcuNSIgZmlsbD0icmdiYSgyNDksIDI0OSwgMjUwLCAwLjYpIiAvPjwvc3ZnPg==) no-repeat left center;
+  }
+}
+
+menupopup {
+  -moz-appearance: none !important;
+  border-radius: 0px !important;
+  border: 1px solid var(--contextmenu-border-separator) !important;
+  padding: 4px 0px 4px 0px !important;
+  margin: 0px 0px 0px 0px !important;
+  min-width: 228px !important;
+  background: var(--contextmenu-background) !important;
+  color: var(--contextmenu-color) !important;
+}
+
+.menu-text {
+  -moz-appearance: none !important;
+  padding: 4px 0px 4px 32px !important;
+  margin: 0px !important;
+}
+
+/* --- Hover --- */
+
+menu[_moz-menuactive="true"],
+menuitem[_moz-menuactive="true"] {
+  -moz-appearance: none !important;
+  background-color: var(--contextmenu-hover) !important;
+  color: var(--contextmenu-color) !important;
+}
+
+menu[disabled="true"],
+menuitem[disabled="true"] {
+  -moz-appearance: none !important;
+  background-color: transparent !important;
+  color: var(--contextmenu-disabled) !important;
+}
+
+#maintenanceButton,
+#viewMenu,
+#organizeButton {
+  -moz-appearance: none !important;
+}
+
+/* --- Navigation --- */
+
+#context-navigation > .menuitem-iconic > .menu-iconic-left {
+  -moz-appearance: none !important;
+  padding: 0px 0px 0px 0px !important;
+  margin: 0px 0px 0px 0px !important;
+  color: var(--contextmenu-icon-primary) !important;
+}
+
+#context-navigation > .menuitem-iconic > .menu-iconic-left[disabled="true"] {
+  -moz-appearance: none !important;
+  padding: 2px 0px 2px 0px !important;
+  margin: 0px 0px 0px 0px !important;
+  color: var(--contextmenu-disabled) !important;
+  background-color: transparent !important;
+}
+
+#context-navigation {
+  background-color: transparent !important;
+  padding: 0px !important;
+  margin: 0px 0px 0px 0px !important;
+}
+
+/* --- Disable Navigation --- */
+
+#context-navigation,
+#context-sep-navigation {
+  display: none !important;
+}
+
+/* --- Checkmark and Radio --- */
+
+menuitem[type="checkbox"][checked="true"] > .menu-iconic-left {
+  transform: scale(0.8);
+}
+
+menuitem[type="checkbox"] > .menu-iconic-left {
+  -moz-appearance: none !important;
+  margin: 0px 7px 0px 8px !important;
+  min-height: 16px;
+}
+
+menupopup > menuitem[type="radio"][checked="true"] > .menu-iconic-left {
+  transform: scale(0.5);
+}
+
+menupopup > menuitem[type="radio"] > .menu-iconic-left {
+  -moz-appearance: none !important;
+  margin: 0px 6px 0px 8px !important;
+  height: 15px;
+}
+
+menupopup > menuitem[type="radio"] > .menu-iconic-text,
+menupopup > menuitem[type="checkbox"] > .menu-iconic-text {
+  -moz-appearance: none !important;
+  padding: 0px !important;
+  margin: 4px 0px 4px 0px !important;
+}
+
+#menucol_placesContentTitle > .menu-iconic-left {
+  visibility: hidden !important;
+}
+
+/* --- Bookmarks --- */
+
+.bookmark-item > .menu-iconic-text {
+  -moz-appearance: none !important;
+  padding: 4px 0px 4px 0px !important;
+  margin: 0px !important;
+}
+
+.bookmark-item > .menu-iconic-left {
+  -moz-appearance: none !important;
+  margin: 0px 8px 0px 8px !important;
+  padding: 0px !important;
+  min-width: 16px !important;
+}
+
+/* --- Separators --- */
+
+menuseparator:not(#context-sep-navigation) {
+  -moz-appearance: none !important;
+  border-top: 1px solid var(--contextmenu-border-separator) !important;
+  border-bottom: 0px solid transparent !important;
+  padding: 0px !important;
+  margin-top: 4px !important;
+  margin-bottom: 4px !important;
+}
+
+#context-sep-navigation {
+  -moz-appearance: none !important;
+  border-top: 1px solid var(--contextmenu-border-separator) !important;
+  border-bottom: 0px solid transparent !important;
+  padding: 0px 0px 0px 0px !important;
+  margin-top: 4px !important;
+  margin-bottom: 4px !important;
+}
+
+/*   Right Menu >   */
+
+menu > .menu-right {
+  margin-inline-end: 0px !important;
+  transform: scale(1.25) !important;
+}
+
+/* --- Extensions and Containers --- */
+
+#context_reopenInContainer > menupopup > .menuitem-iconic > .menu-iconic-left,
+#context-openlinkinusercontext-menu > menupopup > .menuitem-iconic > .menu-iconic-left,
+#new-tab-button > .new-tab-popup > .menuitem-iconic > .menu-iconic-left,
+#new-tab-button-popup > .menuitem-iconic > .menu-iconic-left,
+#contentAreaContextMenu > .menuitem-iconic > .menu-iconic-left {
+  -moz-appearance: none !important;
+  padding: 0px !important;
+  margin: 4px 8px 4px 8px !important;
+  min-width: 16px !important;
+}
+
+#context_reopenInContainer > menupopup > .menuitem-iconic > .menu-iconic-text,
+#context-openlinkinusercontext-menu > menupopup > .menuitem-iconic > .menu-iconic-text,
+#new-tab-button > .new-tab-popup > .menuitem-iconic > .menu-iconic-text,
+#new-tab-button-popup > .menuitem-iconic > .menu-iconic-text,
+#contentAreaContextMenu > .menuitem-iconic > .menu-iconic-text {
+  -moz-appearance: none !important;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+/* --- Back Forward Menu --- */
+
+#forward-button > menupopup > .unified-nav-current,
+#forward-button > menupopup > .unified-nav-back,
+#forward-button > menupopup > .unified-nav-forward,
+#back-button > menupopup > .unified-nav-current,
+#back-button > menupopup > .unified-nav-back,
+#back-button > menupopup > .unified-nav-forward,
+#backForwardMenu > .unified-nav-current,
+#backForwardMenu > .unified-nav-back,
+#backForwardMenu > .unified-nav-forward {
+  -moz-appearance: none !important;
+  padding: 4px 0px 4px 8px !important;
+  margin: 0px !important;
+}
+
+#forward-button > menupopup > .unified-nav-current > .menu-iconic-left,
+#forward-button > menupopup > .unified-nav-back > .menu-iconic-left,
+#forward-button > menupopup > .unified-nav-forward > .menu-iconic-left,
+#back-button > menupopup > .unified-nav-current > .menu-iconic-left,
+#back-button > menupopup > .unified-nav-back > .menu-iconic-left,
+#back-button > menupopup > .unified-nav-forward > .menu-iconic-left,
+#backForwardMenu > .unified-nav-current > .menu-iconic-left,
+#backForwardMenu > .unified-nav-back > .menu-iconic-left,
+#backForwardMenu > .unified-nav-forward > .menu-iconic-left {
+  -moz-appearance: none !important;
+  margin: 0px 8px 0px 0px !important;
+  padding: 0px !important;
+  min-width: 16px !important;
+}
+
+/* --- Context Menu Styling End --- */
